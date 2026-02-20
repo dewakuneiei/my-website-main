@@ -66,7 +66,6 @@ export const slugs = [
   'csharp',
   'rust',
   'godot',
-  'flutter',
   'bootstrap',
   'vuedotjs',
   'bitbucket',
@@ -147,11 +146,6 @@ export const techs = [
     label: 'Figma',
     textColor: '#F24E1E',
     bgColor: '#A03010',
-  },
-  {
-    label: 'Flutter',
-    textColor: '#54C5F8',
-    bgColor: '#2A8FB8',
   },
   {
     label: 'Vue.js',

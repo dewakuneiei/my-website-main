@@ -54,6 +54,9 @@ const Projects = () => {
         btnBg={activeProject.btnBg}
         btnBgHover={activeProject.btnBgHover}
         cardBg={activeProject.cardBg}
+        current={activeProject.current}
+        prevVideo={activeProject.prevVideo}
+        prevVideoLabel={activeProject.prevVideoLabel}
       />
     </div>
   );

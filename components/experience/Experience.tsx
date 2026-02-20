@@ -52,7 +52,7 @@ const Experience = () => {
                       <p className="mt-1 font-Silkscreen text-[11px] text-gray-400">
                         {exp.period}
                       </p>
-                      {exp.duration !== 'Present' && (
+                      {exp.duration && (
                         <p className="font-Silkscreen text-[11px] text-gray-500">
                           {exp.duration}
                         </p>
@@ -95,6 +95,11 @@ const Experience = () => {
                     {edu.school}
                   </h4>
                   <p className="text-whiteice">{edu.degree}</p>
+                  {edu.note && (
+                    <p className="mt-0.5 font-Silkscreen text-[11px] text-gray-500">
+                      {edu.note}
+                    </p>
+                  )}
                 </div>
                 <div className="text-right">
                   <p className="font-Silkscreen text-[11px] text-gray-400">
@@ -105,17 +110,19 @@ const Experience = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-wrap gap-2">
-                {edu.subjects.map((s) => (
-                  <span
-                    key={s}
-                    className="rounded-md px-2 py-0.5 font-Silkscreen text-[11px] uppercase text-gray-300"
-                    style={{ backgroundColor: 'rgba(255,255,255,0.06)' }}
-                  >
-                    {s}
-                  </span>
-                ))}
-              </div>
+              {edu.subjects.length > 0 && (
+                <div className="flex flex-wrap gap-2">
+                  {edu.subjects.map((s) => (
+                    <span
+                      key={s}
+                      className="rounded-md px-2 py-0.5 font-Silkscreen text-[11px] uppercase text-gray-300"
+                      style={{ backgroundColor: 'rgba(255,255,255,0.06)' }}
+                    >
+                      {s}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
         </div>

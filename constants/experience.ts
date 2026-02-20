@@ -4,10 +4,10 @@ export const experiences = [
     company: 'TECHSPACE COMPANY LIMITED',
     role: 'Software Developer',
     type: 'Full-time',
-    period: 'Nov 4, 2025 – Present',
-    duration: 'Present',
+    period: 'Nov 4, 2025 – Feb 27, 2026',
+    duration: '~4 months',
     description:
-      'Continuing as a full-time Software Developer after internship. Writing requirement specs, designing ER diagrams, and building ERP system features with Laravel (PHP) and MySQL.',
+      'Continuing as a full-time Software Developer after internship. Focused on building the Custom Report — Report Generator system, writing requirement specs, designing ER diagrams, and developing ERP features with Laravel (PHP) and MySQL.',
     tech: ['Laravel', 'PHP', 'MySQL', 'BitBucket', 'ER Diagram'],
     color: 'rgba(6,182,212)',
     bgColor: 'rgba(6,182,212,0.05)',
@@ -21,7 +21,7 @@ export const experiences = [
     period: 'Jun 4, 2025 – Sep 19, 2025',
     duration: '3 months',
     description:
-      'Developed and customized ERP system features to meet client requirements. Built a Code Editor for ERP system page customization. Used Laravel (PHP), jQuery, and WebSocket for backend and frontend. Collected requirements from users and translated them into system features. Designed ERP editor interface using Figma.',
+      'Focused on Custom Off-page development with a Code Editor project — built a code editor tool integrated into the ERP system for page customization. Used Laravel (PHP), jQuery, and WebSocket for backend and frontend. Collected requirements from users and translated them into system features. Designed ERP editor interface using Figma.',
     tech: ['Laravel', 'PHP', 'jQuery', 'WebSocket', 'Figma', 'MySQL'],
     color: 'rgba(34,197,94)',
     bgColor: 'rgba(34,197,94,0.05)',
@@ -50,6 +50,7 @@ export const education = [
     degree: 'Bachelor of Engineering – Software Engineering',
     period: 'May 2022 – Present',
     gpa: '3.55',
+    note: 'Phayao, Thailand',
     subjects: [
       'UXUI',
       'OOP',
@@ -62,5 +63,14 @@ export const education = [
       'Software Testing',
       'Project Management (Agile)',
     ],
+  },
+  {
+    id: '2',
+    school: 'Wittayanukul Naree School',
+    degree: 'Mathematics & Science',
+    period: 'May 2019 – Feb 2022',
+    gpa: '3.17',
+    note: 'High School · Phetchabun, Thailand',
+    subjects: [],
   },
 ];

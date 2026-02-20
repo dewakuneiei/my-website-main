@@ -25,6 +25,9 @@ type ProjectDetailsTypes = {
   btnBg: string;
   btnBgHover: string;
   cardBg: string;
+  current?: boolean;
+  prevVideo?: string;
+  prevVideoLabel?: string;
 };
 
 const ProjectDetails = ({
@@ -40,6 +43,9 @@ const ProjectDetails = ({
   btnBg,
   btnBgHover,
   cardBg,
+  current,
+  prevVideo,
+  prevVideoLabel = 'Watch Preview',
 }: ProjectDetailsTypes) => {
   const [hoveredId, setHoveredId] = useState('');
 
@@ -54,6 +60,14 @@ const ProjectDetails = ({
         className="py-20 shadow-2xl transition-all"
       >
         <CardHeader className="text-center">
+          {current && (
+            <div className="mb-3 flex justify-center">
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-green-500/40 bg-green-500/10 px-3 py-1 font-Silkscreen text-[10px] uppercase tracking-widest text-green-400">
+                <span className="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-green-400" />
+                Currently Working On
+              </span>
+            </div>
+          )}
           <CardTitle className="text-whiteice">{title}</CardTitle>
           <CardDescription className="text-tundora">{subTitle}</CardDescription>
         </CardHeader>
@@ -108,6 +122,22 @@ const ProjectDetails = ({
               {liveLabel}
             </Link>
           </Button>
+
+          {prevVideo && (
+            <Button
+              asChild
+              style={{
+                backgroundColor: `${hoveredId === '3' ? btnBgHover : btnBg}`,
+              }}
+              onMouseEnter={() => setHoveredId('3')}
+              onMouseLeave={() => setHoveredId('')}
+              className="transition-all"
+            >
+              <Link href={prevVideo} target="_blank">
+                {prevVideoLabel}
+              </Link>
+            </Button>
+          )}
         </CardFooter>
       </Card>
     </div>
