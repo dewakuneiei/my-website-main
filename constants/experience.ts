@@ -48,7 +48,7 @@ export const education = [
     id: '1',
     school: 'University of Phayao',
     degree: 'Bachelor of Engineering – Software Engineering',
-    period: 'May 2022 – Present',
+    period: 'May 2022 – Sep 2025',
     gpa: '3.55',
     note: 'Phayao, Thailand',
     subjects: [
